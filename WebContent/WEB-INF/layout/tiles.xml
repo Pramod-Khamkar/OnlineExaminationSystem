@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/layout/page.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp"></put-attribute>
+		<put-attribute name="navbar" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
+	</definition>
+	
+	<!-- <definition name="home" extends="base">
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition> -->
+	
+	<definition name="index" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userSignIn" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/userSignIn.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userSignUp" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/userSignUp.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminSignIn" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/adminSignIn.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="adminSignUp" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/adminSignUp.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="administartor" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/administartor.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="addQuestion" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/addQuestion.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="chooseLanguageAdmin" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/chooseLanguageAdmin.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="updateQuestion" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/updateQuestion.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="questionList" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/questionList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="showUserList" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/showUserList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="updateUserDetails" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/updateUserDetails.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="showMarksList" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/adminnavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/showMarksList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="showCategory" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/usernavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/showCategory.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="testQuestionsList" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/usernavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/testQuestionsList.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="showResult" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/usernavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/showResult.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="quizQuestions" extends="base">
+		<put-attribute name="navbar" value="/WEB-INF/layout/usernavbar.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/quizQuestions.jsp"></put-attribute>
+	</definition>
+	
+	<!-- <definition name="success" extends="base">
+		<put-attribute name="body" value="/WEB-INF/views/success.jsp"></put-attribute>
+	</definition> -->
+</tiles-definitions>
